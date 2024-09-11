@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(163, 187, 239);
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #ff0000;
+    border-radius: 5px;
+    z-index: 100;
+    position: fixed;
+}
+
+.logo img {
+    width: 180px;
+    height: 80px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.navmenu {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+}
+
+.navmenu ul {
+    margin-right: 20px;
+    padding: 5px;
+    display: flex;
+}
+
+.navmenu ul li {
+    margin: 5px;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.navmenu ul li a:hover {
+    background-color: rgb(51, 96, 137);
+    border-radius: 8px;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.titlebar {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titlebar a:hover {
+    background-color: rgb(51, 96, 137);
+    border-radius: 20px;
+    font-size: 35px;
+    color: aliceblue;
+}
+
+#ANIME_LIST {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(auto, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.anime-item {
+    background: #e499d6;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.anime-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+}
+
+.anime-item p {
+    padding: 10px;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.mainbody {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.mainbody img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.mainbodytext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 4px rgba(254, 0, 0, 0.7);
+    font-size: 50px;
+    font-weight: bolder;
+    z-index: 1;
+}
+
+body {
+    background-color: rgb(9, 106, 251);
+}
+
+footer {
+    margin: 0;
+    padding: 5px;
+    padding-left: 50px;
+    display: flex;
+    background-color: rgb(228, 118, 45);
+    font-size: 18px;
+    border: 3px solid red;
+    border-radius: 2px;
+    box-sizing: border-box;
+    box-shadow: #333;
+}
+
+footer div {
+    margin: 0;
+    padding: 5px;
+    width: 50%;
+    align-items: center;
+}
